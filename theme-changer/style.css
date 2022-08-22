@@ -1,0 +1,74 @@
+.black {
+    --bg-color: #222;
+    --border: #fff;
+    --text: #fff;
+  }
+  
+  .green {
+    --bg-color: #26c663;
+    --border: #000;
+    --text: #000;
+  }
+  
+  .yellow {
+    --bg-color: #ffc107;
+    --border: #000;
+    --text: #000;
+  }
+  
+  .blue {
+    --bg-color: #276bbf;
+    --border: #fff;
+    --text: #fff;
+  }
+  
+  body {
+    overflow: hidden;
+    background-image: linear-gradient(to right, #00c9ff, #92fe9d);
+  }
+  
+  .instruction {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+  }
+  
+  @media screen and (max-width: 460px) {
+    .instruction {
+      font-size: 0.8rem;
+    }
+  }
+  
+  .btn {
+    max-width: 80px;
+    height: 40px;
+    outline: none;
+    box-shadow: none !important;
+  }
+  
+  hr {
+    margin: 0;
+  }
+  
+  .theme-container {
+    background-color: var(--bg-color);
+    width: 100vw;
+    margin: 0;
+    padding: 4em 2em 8em;
+  }
+  
+  #text {
+    border: 2px solid var(--border);
+    background-color: var(--bg-color);
+    color: var(--text);
+    width: 100%;
+    max-width: 700px;
+    min-height: 400px;
+    margin: auto;
+    outline: none;
+    box-shadow: none;
+    padding: 1em;
+    font-size: 1.5rem;
+    font-family: cursive;
+  }
